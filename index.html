@@ -3,34 +3,68 @@
 <head>
 	<title>Nezir Sefic CV</title>
 </head>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
 <link rel="stylesheet" href="style.css">
 <body>
+
 	<h1>Curriculum vitae</h1>
+	
+	<h3 id="welcomemessage"></h3>
+
 	<hr>
 		<p></p>
 
 		<img src="wave.jpg" alt="Hello!" title="Hi!" class="profile">
 
 	<h2><b>Education</b></h2>
-		<ol type="I">
-			<li>2015-2019 Druga gimnazija Sarajevo</li>
-			<li>2019-UTT International University of Sarajevo (<acronym title="International University of Sarajevo">IUS</acronym>) Faculty of Software Engineering 
-				(<acronym title="Software Engineering">SE</acronym>)</li>
-		</ol>
-		<hr>
+
+	
+	<p id="text"></p>
+  
+	<button type="button"
+  onclick="original()">
+  Original</button>
+	
+	
+	
+	<button type="button"
+  onclick="reverse()">
+  Reverse</button>
+	  	
+	  <hr>
+
 
 	<h2><b>Personal skills</b></h2>
 
 		<h3><p>Communication skills</p></h3>
- 			Good rhetorical skills acquired from the subject ELIT100 Academic English and Effective Communication
-
+		
+			 <p> Good rhetorical skills acquired from the subject ELIT100 Academic English and Effective Communication</p>
+		
+		
+		
 		<h3><p>Business skills</p></h3>
-		<ul>
- 		Responsibility in performing business tasks in the most efficient way within the given deadline <br>
- 		Persistence in overcoming obstacles to achieving set goals <br>
+
+
+		<button id="open">
+			Click to view.
+		</button>
+		<div class="modal-container" id="modal_container">
+			<div class="modal">
+				<p>
+					Responsibility in performing business tasks in the most efficient way within the given deadline <br>
+ 		Persistence in overcoming obstacles to achieving set goals <br> 
  		Willingness to work in a team <br>
  		Mastery of written expression <br>
-		</ul>
+				</p>
+				<button id="close">
+					Click to close.
+				</button>
+			</div>
+		</div>
+		<script src="content.js"></script>
 
   		<h3><p>Computer skills</p></h3>
  			Acquired at the Department of Software Engineering at IUS (<acronym title="International University of Sarajevo">IUS</acronym>)
@@ -78,7 +112,7 @@
 		</table>
 
 		<h3><p>Other skills</p></h3>
- 			Music: Completed Elementary Music School Mladen Pozajić Sarajevo, instrument: piano <br>
+ 			Music: Completed Elementary Music School Mladen Pozajic Sarajevo, instrument: piano <br>
  			Drivers license B category (driving experience from 2018. onward)
  		<hr>
  	<h2><b>Find me</b></h2>
@@ -86,11 +120,24 @@
  	<address>
 	Zmaja od Bosne 90, <br>
 	Sarajevo 71000 <br>
-	<a href="mailto:190302064@student.ius.edu.ba">Shoot me an email!</a>
-    </address>
+	<button type="button"><a href="mailto:190302064@student.ius.edu.ba">Shoot me an email!</a></button>
+	<br>
+    
+			<img src="mail.png" class="letter">
+		
+			<img src="stickman.png" class="stick">
+	
+
+
+</address>
 	<p>
 		<a href="#top"><img src="top.png" class="button" alt="Top"></a>		
 	</p>
+    
+
+
+
+
 
 </body>
 </html>
